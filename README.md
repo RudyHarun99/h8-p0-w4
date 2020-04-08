@@ -18,7 +18,7 @@
 
 - [Exercise 9 : Cek AB](https://github.com/RudyHarunArrasyid/h8-p0-w4/blob/master/exercise-09-cekab.js)
 
-- [Exercise 10 : Change Me](https://github.com/RudyHarunArrasyid/h8-p0-w4/blob/master/exercise-10-checkme.js)
+- [Exercise 10 : Change Me](https://github.com/RudyHarunArrasyid/h8-p0-w4/blob/master/exercise-10-changeme.js)
 
 - [Exercise 11 : Shopping Time](https://github.com/RudyHarunArrasyid/h8-p0-w4/blob/master/exercise-11-shoppingtime.js)
 
