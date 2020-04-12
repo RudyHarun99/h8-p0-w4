@@ -38,27 +38,43 @@ function shoppingTime(memberId, money) {
   var listPurchased = [];
   var changeMoney = money;
 
+  var arr = [
+    ['Sepatu Stacattu', 1500000],
+    ['Baju Zoro', 500000],
+    ['Baju H&N', 250000],
+    ['Sweater Uniklooh', 175000],
+    ['Casing Handphone', 50000]
+  ];
+
   // membandingkan money dengan harga barang
-  if (changeMoney >= 1500000) {
-    listPurchased.push('Sepatu Stacattu');
-    changeMoney -= 1500000;
+  for (var i = 0; i < arr.length; i++) {
+    if (changeMoney >= arr[i][1]) {
+      listPurchased.push(arr[i][0]);
+      changeMoney -= arr[i][1];
+    }
   }
-  if (changeMoney >= 500000) {
-    listPurchased.push('Baju Zoro');
-    changeMoney -= 500000;
-  }
-  if (changeMoney >= 250000) {
-    listPurchased.push('Baju H&N');
-    changeMoney -= 250000;
-  }
-  if (changeMoney >= 175000) {
-    listPurchased.push('Sweater Uniklooh');
-    changeMoney -= 175000;
-  }
-  if (changeMoney >= 50000) {
-    listPurchased.push('Casing Handphone');
-    changeMoney -= 50000;
-  }
+  
+  // // membandingkan money dengan harga barang
+  // if (changeMoney >= 1500000) {
+  //   listPurchased.push('Sepatu Stacattu');
+  //   changeMoney -= 1500000;
+  // }
+  // if (changeMoney >= 500000) {
+  //   listPurchased.push('Baju Zoro');
+  //   changeMoney -= 500000;
+  // }
+  // if (changeMoney >= 250000) {
+  //   listPurchased.push('Baju H&N');
+  //   changeMoney -= 250000;
+  // }
+  // if (changeMoney >= 175000) {
+  //   listPurchased.push('Sweater Uniklooh');
+  //   changeMoney -= 175000;
+  // }
+  // if (changeMoney >= 50000) {
+  //   listPurchased.push('Casing Handphone');
+  //   changeMoney -= 50000;
+  // }
 
   if (memberId == '' || memberId == undefined) {
     return 'Mohon maaf, toko X hanya berlaku untuk member saja';
