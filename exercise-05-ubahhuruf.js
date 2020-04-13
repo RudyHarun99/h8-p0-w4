@@ -14,12 +14,17 @@ function ubahHuruf(kata) {
     // mencari nilai index kata dalam kamus abjad
     for (var i = 0; i < kata.length; i++) {
         for (var j = 0; j < abjad.length; j++) {
+            // index abjad ditambah 1
             if (kata[i] == abjad[j]) {
-                index = j;
+                index = j + 1;
+            }
+            // kalau karakter kata == 'z', kembali ke index 0
+            if (kata[i] == 'z') {
+                index = 0;
             }
         }
-        // menambahkan nilai index dengan 1
-        kata1 += abjad[index + 1];
+        // menambahkan kata1 dengan abjad[index]
+        kata1 += abjad[index];
     }
     
     return kata1;
@@ -31,3 +36,4 @@ function ubahHuruf(kata) {
   console.log(ubahHuruf('javascript')); // kbwbtdsjqu
   console.log(ubahHuruf('keren')); // lfsfo
   console.log(ubahHuruf('semangat')); // tfnbohbu
+  console.log(ubahHuruf('zoo')); // app
